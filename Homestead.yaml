@@ -20,16 +20,22 @@ sites:
     - map: homestead.test
       to: /home/vagrant/code/public
 
-    - map: homestead2.test
+    - map: homestead.test
       to: /home/vagrant/code2/public
+      port: 81
 
 databases:
     - homestead
+    - homestead2
 
 features:
     - mariadb: false
     - ohmyzsh: false
     - webdriver: false
+
+ports:
+  - send: 8100
+    to: 81
 
 # ports:
 #     - send: 50000
