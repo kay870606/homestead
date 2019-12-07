@@ -20,9 +20,9 @@ sites:
     - map: homestead.test
       to: /home/vagrant/code/public
 
-    - map: homestead.test
+    - map: homestead2.test
       to: /home/vagrant/code2/public
-      port: 81
+#      port: 81
 
 databases:
     - homestead
@@ -34,8 +34,8 @@ features:
     - webdriver: false
 
 ports:
-  - send: 8100
-    to: 81
+    - send: 8100
+      to: 81
 
 # ports:
 #     - send: 50000
